@@ -10,16 +10,19 @@ nav a:hover, nav a:focus {
 
 /* Step 2a: Write selector/rule property to position the default position for the skip class element*/
 
-.skip{
+.skip a{
      position: absolute;
 	top: -40px;
+     left: -900px;
 }
 
 
 /* Step 2b: Write selector/rule property to position the skip class element when it is in focus*/
 
-.skip:focus{
+.skip a:focus{
+
      top: 20px;
+     left: 0px;
 }
 
 
@@ -36,6 +39,8 @@ nav a:hover, nav a:focus {
      display: grid;
      grid-template-columns: 1fr 5fr 1fr;
      row-gap: 15px;
+     align-items: center;
+     justify-content: center;
    }   
 
 
@@ -128,6 +133,8 @@ first div in the grid  and place it in the grid. */
 
   .container {
      grid-template-columns: 50px auto 500px auto 50px;
+     align-items: center;
+     justify-content: center;
 }   
 
 
@@ -145,9 +152,10 @@ first div in the grid  and place it in the grid. */
 
  /* Step 13:Write the selector/rule property to update the .text-block class */
 
- .text-block {
+ .about.text-block, .method.text-block, .clients.text-block, .contact.text-block {
+    
+     text-align: center;
      max-height: 250px;
-     overflow: auto;
 }
 
 
